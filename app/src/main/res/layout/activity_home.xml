@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/app_background">
+
+    <include
+        android:id="@+id/relativeLayout"
+        layout="@layout/navi"/>
+
+    <FrameLayout
+        android:id="@+id/mainframe"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/layout_menu"
+        android:layout_below="@+id/relativeLayout"
+        android:background="@color/colorAccent">
+    </FrameLayout>
+
+    <liu.tao.habitbuild.view.MainMenuView
+        android:id="@+id/layout_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+    </liu.tao.habitbuild.view.MainMenuView>
+</RelativeLayout>
